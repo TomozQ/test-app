@@ -1,15 +1,22 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom"
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-class App extends Component {
+// import component
+import AppFooter from './AppFooter'
 
-  render(){
-    return (
+const App = () => {
+  return (
+    <div>
       <div>
-        <h1>Hello, world!</h1>
+        <h1>Hello world</h1>
       </div>
-    )
-  }
+      <AppFooter />
+    </div>
+  )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+export default App
+
+ReactDOM.render(
+    <App />,document.getElementById('root')
+)

@@ -4,9 +4,12 @@ import ReactDOM from 'react-dom'
 // import component
 import AppFooter from './AppFooter'
 
+// import style
+import './index.css'
+
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <div>
         <h1>Hello world</h1>
       </div>
